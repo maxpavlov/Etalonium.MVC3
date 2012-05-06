@@ -81,6 +81,9 @@
     <Content Include="apple-touch-icon-72x72-precomposed.png" />
     <Content Include="apple-touch-icon-precomposed.png" />
     <Content Include="apple-touch-icon.png" />
+    <Content Include="Content\blueprint\ie.css" />
+    <Content Include="Content\blueprint\print.css" />
+    <Content Include="Content\blueprint\screen.css" />
     <Content Include="Content\global.css" />
     <Content Include="Content\globalIE.css" />
     <Content Include="Content\handheld.css" />
@@ -166,7 +169,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>7709</DevelopmentServerPort>
+          <DevelopmentServerPort>36067</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

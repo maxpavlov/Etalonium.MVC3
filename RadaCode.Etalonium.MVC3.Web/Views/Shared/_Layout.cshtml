@@ -42,9 +42,12 @@
 			</style>
 		<![endif]-->
 		Html.RequiresCss("global.css", "Content", 100);
-		Html.RequiresCss("html5.css", "Content", 99);
+		Html.RequiresCss("blueprint/screen.css", "Content", 99);
+		Html.RequiresCss("blueprint/print.css", "Content", 99);
+		Html.RequiresCss("html5.css", "Content", 98);
 		Html.RequiresCss("handheld.css?v=2", "Content", 97, new { media = "handheld" });
 		Html.RequiresCss("jquery.ui.theme.css", "Base", 96);
+		
 
 		Html.RequiresJs("jquery/1.7.2/jquery.min.js", "googleCDN", 1);
 

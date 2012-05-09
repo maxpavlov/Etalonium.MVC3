@@ -33,11 +33,25 @@ namespace RadaCode.Etalonium.MVC3.Web.Application.ViewEngines
 
             var request = controllerContext.HttpContext.Request;
 
-            if (request.Cookies["language"] != null)
+            try
             {
-                Thread.CurrentThread.CurrentCulture =
-                    Thread.CurrentThread.CurrentUICulture =
-                    new CultureInfo(request.Cookies["language"].Value);
+                if (request.Cookies["language"] != null)
+                {
+                    Thread.CurrentThread.CurrentCulture =
+                        Thread.CurrentThread.CurrentUICulture =
+                        new CultureInfo(request.Cookies["language"].Value);
+                }
+
+                if (request.QueryString["lang"] != null)
+                {
+                    Thread.CurrentThread.CurrentCulture =
+                        Thread.CurrentThread.CurrentUICulture =
+                        new CultureInfo(request.QueryString["lang"]);
+                }
+            }
+            catch
+            {
+                ;
             }
 
             string localizedViewPath;
